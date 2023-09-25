@@ -13,8 +13,9 @@ function App() {
     <>
       <h1 className='text-center font-bold text-2xl font-mono m-2'>Tic Tac Toe</h1>
 
-      <MakeBoard noOfRows={5} />
-      {/* <MakeRow noOfCol={5} value={"X"} onSquareClick={"clicked"}/> */}
+      <div className="h-screen w-screen flex justify-center items-center">
+        <MakeBoard noOfRows={3} />
+      </div>
     </>
   )
 }
