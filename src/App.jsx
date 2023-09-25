@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import MakeBoard from "./utilities/Board"
+import MakeRow from "./utilities/Board"
 
 
 function handleClick(){
@@ -12,7 +13,8 @@ function App() {
     <>
       <h1 className='text-center font-bold text-2xl font-mono m-2'>Tic Tac Toe</h1>
 
-      <MakeBoard />
+      <MakeBoard noOfRows={5} />
+      {/* <MakeRow noOfCol={5} value={"X"} onSquareClick={"clicked"}/> */}
     </>
   )
 }
